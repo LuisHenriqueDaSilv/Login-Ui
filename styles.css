@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: #F8FAFC;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+:root {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.app {
+    width: 100%;
+    padding: 4rem;
+}
+
+
+#logo {
+    width: 50%;
+}
+
+#title {
+    text-align: justify;
+    margin-top: 5rem;
+    max-width: 35.1rem;
+}
+
+#title h1 {
+    font-size: 3.6rem;
+    margin-bottom: 1.6rem;
+    line-height: 5.5rem;
+    color: #1E293B;
+}
+
+#title p {
+    font-size: 1.7rem;
+    line-height: 24px;
+    color: #475569;
+}
+
+#form {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-bottom: 1.6rem;
+}
+
+.input-area label {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+
+    color: #1E293B;
+}
+
+.input-area input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.6rem 1.2rem;
+    gap: 1rem;
+
+    height: 5.3rem;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    font-weight: 400;
+
+}
+
+.input-area input:focus {
+    outline: auto #7C3AED;
+}
+
+#form button {
+    padding: 1.6rem 2.4rem;
+    gap: 1.0rem;
+
+    width: 100%;
+    height: 5.6rem;
+    border: none;
+    margin-top: 1.6rem;
+
+
+    background: #7C3AED;
+    border-radius: 4px;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+
+    transition: 400ms;
+    cursor: pointer;
+
+}
+
+#form button:hover {
+    background-color: #9F67FF;
+}
+
+#subscription-cto {
+    margin-top: 3.2rem;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    color: #475569;
+}
+
+#subscription-cto a {
+    color: #7C3AED;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#subscription-cto a:hover {
+    text-decoration: underline;
+}
+
+#background-image {
+    display: none;
+}
+
+@media (min-width: 952px) {
+
+    .app {
+        width: 50vw;
+        padding: 11.2rem;
+    }
+
+    .background-image {
+        display: block;
+        width: 50vw;
+        height: 100vh;
+        background: url(./assets/background.png) no-repeat center center;
+        background-size: 100vh;
+    }
+
+    #logo {
+        width: 159.5px;
+    }
+
+    #title {
+        margin-top: 11.4rem;
+    }
+
+    #form {
+        width: 38.4rem;
+    }
+}
